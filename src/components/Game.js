@@ -7,6 +7,8 @@ const Game = () => {
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXIsNext] = useState(true);
 
+  // callback function that responsible for updating the game state
+  // and history when a square is clicked
   const handleClick = (i) => {
     const newHistory = history.slice(0, stepNumber + 1);
     const current = newHistory[newHistory.length - 1];
